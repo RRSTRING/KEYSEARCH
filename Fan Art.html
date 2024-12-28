@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Art Gallery</title>
+    <style>
+        body {
+            background: url('background.gif');
+            color: #000;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            text-align: center;
+            background-color: #ffcc00;
+            padding: 20px;
+            font-size: 36px;
+            font-weight: bold;
+        }
+        nav {
+            background-color: #ffcc00;
+            overflow: hidden;
+            padding: 10px;
+        }
+        nav a {
+            margin: 10px;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 300px;
+            height: auto;
+            border: 2px solid #000;
+            border-radius: 10px;
+        }
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: none;
+        }
+        footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffcc00;
+        }
+    </style>
+</head>
+<body id="fanart-page">
+    <header>
+        <h1>Fan Art Gallery</h1>
+        <p>Showcasing amazing artwork from our talented players!</p>
+    </header>
+
+    <nav>
+        <a href="bruh.html">Home</a> <!-- Link back to the main website -->
+        <a href="#gallery">Gallery</a>
+        <a href="#submission-form">Submit Fan Art</a>
+        <a href="#voting-form">Voting Fan Art</a>
+    </nav>
+
+    <div class="container">
+        <!-- Fan Art Gallery Section -->
+        <h2 id="gallery">Gallery</h2>
+        <p>Nothing to see here!</p>
+        <div class="gallery">
+            <img src="fanart1.jpg" alt="Fan Art 1">
+            <img src="fanart2.jpg" alt="Fan Art 2">
+            <img src="fanart3.jpg" alt="Fan Art 3">
+            <!-- Add more images here -->
+        </div>
+
+        <!-- Fan Art Submission Form Section -->
+        <h2 id="submission-form"> Submit Your Fan Art</h2>
+        <a href ="https://forms.gle/Knj8VTfre64ESFXS7">Click me!</a>
+        
+        
+
+<!-- Fan Art Submission Form Section -->
+        <h2 id="voting-form"> Vote On Fan Art</h2>
+        <p>Coming soon!</p>
+    </div>
+
+    <footer>
+         Thanks for playing. See you again.
+    </footer>
+</body>
+</html>
