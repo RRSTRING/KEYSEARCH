@@ -105,5 +105,26 @@
     <footer>
         Thanks for playing. See you again.
     </footer>
+
+            <div class="counter">
+            Visitor Count: <span id="visitor-count">Loading...</span>
+        </div>
+    </footer>
+
+    <script>
+        // Simulated visitor counter
+        function updateVisitorCount() {
+            // Retrieve visitor count from local storage or initialize
+            let count = parseInt(localStorage.getItem('visitorCount') || '0');
+            count += 1;
+            localStorage.setItem('visitorCount', count);
+
+            // Display the updated count
+            document.getElementById('visitor-count').innerText = count;
+        }
+
+        // Update the visitor count on page load
+        window.onload = updateVisitorCount;
+    </script>
 </body>
 </html>
